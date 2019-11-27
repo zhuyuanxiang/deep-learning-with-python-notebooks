@@ -2,6 +2,8 @@
   <dictionary name="zhuyuanxiang">
     <words>
       <w>keras</w>
+      <w>lookback</w>
+      <w>lstm</w>
       <w>vectorize</w>
     </words>
   </dictionary>
