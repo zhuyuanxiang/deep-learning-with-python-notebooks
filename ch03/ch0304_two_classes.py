@@ -141,11 +141,11 @@ history_dict = history.history
 print("history_dict.keys() =", history_dict.keys())
 loss_values = history_dict['loss']
 val_loss_values = history_dict['val_loss']
-epochs = range(1, len(loss_values) + 1)
+epochs_range = range(1, len(loss_values) + 1)
 
 plt.figure()
-plt.plot(epochs, loss_values, 'bo', label = '训练集的损失')  # bo 蓝色圆点
-plt.plot(epochs, val_loss_values, 'b', label = '验证集的损失')  # b 蓝色实线
+plt.plot(epochs_range, loss_values, 'bo', label = '训练集的损失')  # bo 蓝色圆点
+plt.plot(epochs_range, val_loss_values, 'b', label = '验证集的损失')  # b 蓝色实线
 plt.title('图3-7：训练损失和验证损失')
 plt.xlabel('Epochs--批次')
 plt.ylabel('Loss--损失')
@@ -155,8 +155,8 @@ acc = history_dict['binary_accuracy']
 val_acc = history_dict['val_binary_accuracy']
 
 plt.figure()
-plt.plot(epochs, acc, 'bo', label = '训练集的精度')
-plt.plot(epochs, val_acc, 'b', label = '验证集的精度')
+plt.plot(epochs_range, acc, 'bo', label = '训练集的精度')
+plt.plot(epochs_range, val_acc, 'b', label = '验证集的精度')
 plt.title('图3-8：训练精度和验证精度')
 plt.xlabel('Epochs--批次')
 plt.ylabel('Accuracy--精度')
