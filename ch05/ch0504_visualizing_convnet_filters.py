@@ -19,7 +19,7 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np  # pip install numpy<1.17，小于1.17就不会报错
 import winsound
-from keras import backend as K
+from keras import backend as K  # 使用支撑Keras运算的平台的函数（因此先了解 TensorFlow 才能更好的理解这个K的操作）
 from keras.applications import VGG16
 
 # 屏蔽警告：Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
