@@ -2,44 +2,57 @@
 
 [美国]弗朗索瓦.肖莱 著；张亮 译
 
-# 环境准备
+## 环境准备
 
-## 开发环境
-- 硬件环境（建议升级台式机，在经济实力允许的情况下平衡各个硬件，目标都要又大又快）
-    - CPU：i5-5200u
-    - GPU: 820M
-    - 内存：8M
-    - SSD：500G
-- 软件环境
-    - Python 3.6.7
-    - Anaconda 1.9.2（建议不要升级到1.9.5，会出错）
-    - 开发包(建议通过AnaConda安装，因为AnaConda会帮助安装相关的支持工具包）
-        - Keras 2.2.5：需要配置环境
-        - TensorFlow 1.3.0：我的显卡计算力太低，无法配置GPU支持
-        - NumPy 1.16.5
-        - MatplotLib 3.1.2
-            - matplotlib绘图需要提供中文字体支持。
-                1. 将 “\Tools” 目录下的 “YaHei.Consolas.1.12.ttf” 文件拷贝到 “\Lib\site-packages\matplotlib\mpl-data\fonts\ttf” 目录下。
-                2. 将 “\Tools” 目录下的 “matplotlibrc” 文件拷贝到 “\Lib\site-packages\matplotlib\mpl-data\” 目录下，
-                拷贝过程中可以直接覆盖原始文件，也可以将原始文件改名。
-        - Scikit-Learn 0.21.3
-        - NLTK 3.4.4
-        - Theano 1.0.4：需要配置环境
-        - m2w-toolchain 5.3.0
-        - libpython 2.0
-        - opencv 4.1.2
-        - pydot 1.4.1
-        - GraphViz 2.38.0
-        - python-graphviz 0.13.2
-        - pydot-ng 2.0.0 （不知道是否一定需要安装，AnaConda因为冲突不允许安装，可以使用pip install 安装）
-    - 开发包（可选）（我的是旧的显卡 820M）
-        - CUDA 7.5：下载安装即可
-        - cuDNN 不支持：下载后解压到CUDA安装目录即可
-    - IDE
-        - PyCharm Community Edition：免费，够用，不支持Jupiter（可以用VS Code代替）
-        - PyCharm Professional Edition：支持的功能更多，需要有个大屏幕
+### 开发环境
 
-# 补充说明
+#### 硬件环境
+
+（建议升级台式机，在经济实力允许的情况下平衡各个硬件，目标都要又大又快）
+
+我的环境
+
+- CPU：i5-5200u
+- GPU: 820M
+- 内存：8M
+- SSD：500G
+
+#### 软件环境
+
+运行环境
+
+- Python 3.6.7
+- Anaconda 1.9.2（建议不要升级到1.9.5，会出错）
+
+开发包(建议通过AnaConda安装，因为AnaConda会帮助安装相关的支持工具包）
+- Keras 2.2.5：需要配置环境
+- TensorFlow 1.3.0：我的显卡计算力太低，无法配置GPU支持
+- NumPy 1.16.5
+- MatplotLib 3.1.2
+    - matplotlib绘图需要提供中文字体支持。
+        1. 将 “\Tools” 目录下的 “YaHei.Consolas.1.12.ttf” 文件拷贝到 “\Lib\site-packages\matplotlib\mpl-data\fonts\ttf” 目录下。
+        2. 将 “\Tools” 目录下的 “matplotlibrc” 文件拷贝到 “\Lib\site-packages\matplotlib\mpl-data\” 目录下，
+        拷贝过程中可以直接覆盖原始文件，也可以将原始文件改名。
+- Scikit-Learn 0.21.3
+- NLTK 3.4.4
+- Theano 1.0.4：需要配置环境
+- m2w-toolchain 5.3.0
+- libpython 2.0
+- opencv 4.1.2
+- pydot 1.4.1
+- GraphViz 2.38.0
+- python-graphviz 0.13.2
+- pydot-ng 2.0.0 （不知道是否一定需要安装，AnaConda因为冲突不允许安装，可以使用pip install 安装）
+
+- 开发包（可选）（我的是旧的显卡 820M）
+    - CUDA 7.5：下载安装即可
+    - cuDNN 不支持：下载后解压到CUDA安装目录即可
+
+IDE
+- PyCharm Community Edition：免费，够用，不支持Jupiter（可以用VS Code代替）
+- PyCharm Professional Edition：支持的功能更多，需要有个大屏幕
+
+## 补充说明
 
 **没有Jupiter可以访问下面的链接**
 * Chapter 2:
@@ -69,7 +82,7 @@
     * [8.5: Introduction to GANs](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/8.5-introduction-to-gans.ipynb)
 
 
-# Ch01 什么是深度学习
+## Ch01 什么是深度学习
 
 - 基本概念
 - 发展历史
